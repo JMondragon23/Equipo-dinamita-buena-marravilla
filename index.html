@@ -3,17 +3,17 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Página básica con CSS</title>
-  <meta name="description" content="Ejemplo de página básica con HTML y CSS" />
+  <title>Practica básica con CSS</title>
+  <meta name="description" content="Ejemplo de página básica con HTML, CSS" />
 
   <style>
     /* Reset ligero */
     * { box-sizing: border-box; margin: 0; padding: 0; }
-    html, body { height: 100%; font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; color: #222; background: #f6f8fb; }
+    html, body { height: 100%; font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; color: hsl(0, 0%, 13%); background: #f6f8fb; }
 
     /* Contenedor principal */
     .container {
-      max-width: 1100px;
+      max-width: 1200px;
       margin: 0 auto;
       padding: 24px;
     }
@@ -21,14 +21,14 @@
     /* Header / Navbar */
     header {
       background: linear-gradient(90deg, #eb0712 0%, #06d433 100%);
-      color: white;
+      color: blue;
       border-radius: 12px;
       padding: 18px 22px;
       margin-bottom: 24px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 12px;
+      gap: 16px;
     }
     .brand {
       display: flex;
@@ -40,7 +40,7 @@
       background: rgba(255,255,255,0.15);
       border-radius: 10px;
       display: flex; align-items: center; justify-content: center;
-      font-weight: 700; font-size: 18px;
+      font-weight: 800; font-size: 18px;
     }
     nav ul {
       display: flex;
@@ -55,17 +55,17 @@
       font-weight: 600;
       transition: background .18s, transform .12s;
     }
-    nav a:hover { background: rgba(255,255,255,0.08); transform: translateY(-1px); }
+    nav a:hover { background: rgba(95, 18, 126, 0.08); transform: translateY(-1px); }
 
     /* Hero */
     .hero {
-      background: white;
+      background: yellow;
       border-radius: 12px;
       padding: 28px;
       margin-bottom: 20px;
       box-shadow: 0 6px 18px rgba(16,24,40,0.06);
       display: grid;
-      grid-template-columns: 1fr 320px;
+      grid-template-columns: 1fr 480px;
       gap: 20px;
       align-items: center;
     }
@@ -73,11 +73,11 @@
     .hero p { color: #475569; line-height: 1.5; margin-bottom: 16px; }
     .cta {
       display: inline-block;
-      background: linear-gradient(90deg,#0ea5e9,#7c3aed);
+      background: linear-gradient(90deg,#4aafa2,#58ed3a);
       color: white;
-      padding: 10px 16px;
+      padding: 6px 16px;
       border-radius: 10px;
-      font-weight: 700;
+      font-weight: 800;
       text-decoration: none;
       box-shadow: 0 6px 18px rgba(79,70,229,0.18);
     }
@@ -96,10 +96,10 @@
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
       gap: 16px;
-      margin-bottom: 24px;
+      margin-bottom: 48px;
     }
     .card-basic {
-      background: white;
+      background: orangered;
       border-radius: 12px;
       padding: 16px;
       box-shadow: 0 6px 14px rgba(16,24,40,0.04);
@@ -134,7 +134,7 @@
     }
 
     /* Pequeños detalles */
-    .muted { color: #94a3b8; font-size: 13px; }
+    .muted { color: #144385; font-size: 13px; }
     .badge { display:inline-block; padding:4px 8px; border-radius:999px; background:#eef2ff; color:#0369a1; font-weight:700; font-size:12px; }
 
   </style>
@@ -146,7 +146,7 @@
         <div class="logo">YC</div>
         <div>
           <div style="font-weight:800; font-size:18px;">Mi Página</div>
-          <div class="muted" style="font-size:13px;">Ejemplo básico · HTML + CSS</div>
+          <div class="muted" style="font-size:13px;">Ejemplo practico · HTML + CSS</div>
         </div>
       </div>
 
